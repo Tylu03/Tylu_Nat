@@ -108,13 +108,13 @@ public class Class {
 			System.out.print("\t" + l.get(i));
 		}
 	}
-//	public void mark() {
-//		for(int i = 0; i < l.size(); i++) {
-//			if(l.get(i).getQue() == "Quang Nam") {
-//				l.get(i).setAvg(l.get(i).getAvg()+ 0,3f);
-//			}
-//		}
-//	}
+	public void mark() {
+		for(int i = 0; i < l.size(); i++) {
+			if(l.get(i).getQue() == "Quang Nam") {
+				l.get(i).setAvg(l.get(i).getAvg()+ 0.3f);
+			}
+		}
+	}
 	public void  sort() {
 		l.sort(Comparator.comparing(SV::getName));
 	}
