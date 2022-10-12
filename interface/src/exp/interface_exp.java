@@ -1,11 +1,12 @@
 package exp;
-interface printble{
+interface printable{
 	void print();
 }
-interface showable{
+// interface co the extends nhau de co the implement 1 cai cho ngan gon
+interface showable extends printable{
 	void show();
 }
-class A implements printble, showable{
+class A implements showable{
 	public void print() {
 		System.out.println("Hello");
 	}
@@ -19,6 +20,8 @@ public class interface_exp {
 		A a = new A();
 		a.print();
 		a.show();
+		// co the tao doi tuong interface cho lop implement
+		printable b = new A();
 	}
 
 }
